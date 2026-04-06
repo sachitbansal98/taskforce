@@ -448,7 +448,7 @@ function AIAddScreen({ onAdd, onClose }) {
     if (recognitionRef.current) recognitionRef.current.abort();
 
     const recognition = new SR();
-    recognition.lang = "hi-IN";
+    recognition.lang = "en-IN";
     recognition.interimResults = true;
     recognition.continuous = true;
     recognition.maxAlternatives = 1;
@@ -561,7 +561,8 @@ function AIAddScreen({ onAdd, onClose }) {
                 <div style={{ marginTop: 12, fontSize: 13, color: isListening ? "#EB5757" : "#4F4F4F", fontWeight: isListening ? 600 : 400 }}>
                   {isListening ? "Listening... tap to stop" : "Tap to speak"}
                 </div>
-                <div style={{ fontSize: 11, color: "#333D4D", marginTop: 4 }}>🗣️ Hindi & English supported</div>
+                <div style={{ fontSize: 11, color: "#333D4D", marginTop: 4 }}>🗣️ English (Indian accent supported)
+</div>
               </div>
             )}
 
