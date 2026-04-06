@@ -508,7 +508,7 @@ function AIAddScreen({ onAdd, onClose }) {
     const task = {
       id: genId(),
       title: manTitle ?? parsed.title,
-      notes: manNotes ?? parsed.notes || "",
+      notes: manNotes ?? (parsed.notes || ""),
       project: manProject ?? parsed.project,
       priority: manPriority ?? parsed.priority,
       due: manDue !== null ? (manDue || null) : (parsed.due || null),
